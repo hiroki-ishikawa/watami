@@ -1,6 +1,6 @@
-organization := "com.github.kmizu"
+organization := "net.stonerivers"
 
-name := "sbt-idea-template"
+name := "watami"
 
 version := "0.1"
 
@@ -9,6 +9,8 @@ scalaVersion := "2.9.2"
 scalacOptions := Seq("-unchecked", "-deprecation")
 
 libraryDependencies ++= Seq(
-  "org.scalaj" %% "scalaj-http" % "0.3.6",
-  "org.specs2" %% "specs2" % "1.12.2" % "test"
+  "com.github.scala-incubator.io" %% "scala-io-core" % "latest.integration",
+  "com.github.scala-incubator.io" %% "scala-io-file" % "latest.integration"
 )
+
+resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
